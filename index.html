@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tjandra's Portfolio</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./library/bootstrap-4.1.3-dist/css/bootstrap.min.css" />
+
+    <!-- Animate On Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="./library/animate/animate.min.css  " />
+
+    <!-- Pointer -->
+    <link rel="stylesheet" href="./library/pointer/pointer.css" />
+
+    <!-- Hamburger -->
+    <link rel="stylesheet" href="./library/hamburger/hamburger.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+
+    <!-- Tipsy ToolTip -->
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+
+    <!-- Tiny Slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Tab Icon -->
+    <link rel="shortcut icon" type="image/png" href="./assets/image/logo.png" />
+  </head>
+  <body>
+    <!-- 
+  |￣￣￣￣￣￣￣￣|
+  | WHY YOU     |
+  |    STALK MY | 
+  |CODE ? >:(   |
+  |＿＿＿＿＿____| 
+(\__/) || 
+(•ㅅ•)  || 
+/ 　 づ 
+-->
+    <header>
+      <div class="hero">
+        <div class="single-page">
+          <nav class="navbar navbar-expand-lg navbar-light sticky" id="navbar">
+            <div class="container">
+              <a class="navbar-brand" href="#" id="brand">Tjandra</a>
+
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mr-auto"></div>
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link visit-link" href="#about">about</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link visit-link" href="#experience">experience</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link visit-link" href="#featured-projects">projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link visit-link" href="https://github.com/Tjandra-Putra" target="_blank">github</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link visit-link" href="https://www.linkedin.com/in/tjandra-putra/" target="_blank"
+                      >linkedin
+
+                      <span>
+                        <div class="nav-horizontal-line d-none d-sm-block" id="nav-horizontal-line"></div>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <div class="hero-message">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-7">
+                  <p
+                    style="
+                      font-size: 0.9rem;
+                      margin-bottom: 1rem;
+                      font-weight: 600;
+                      text-transform: uppercase;
+                      letter-spacing: 2px;
+                    "
+                  >
+                    — Portfolio
+                  </p>
+
+                  <div class="hero-title">
+                    <div>Hi, my name is Tjandra,</div>
+
+                    <div>
+                      <p>I am a <span class="type"></span></p>
+                    </div>
+                  </div>
+
+                  <p id="personal-quality">
+                    I am a student at Singapore Management University studying Information Systems. I'm passionate in
+                    learning new technologies and software development.
+                  </p>
+
+                  <div class="d-flex">
+                    <a href="./img/Tjandra Putra_Resume .pdf" class="btn btn-dark mt-3" id="resume" target="_blank">
+                      <p style="padding-top: 5px">Resume</p>
+                    </a>
+                    <a href="#experience" class="btn btn-grey mt-3 ml-3">
+                      <p style="padding-top: 5px">Learn More</p>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-md-5">
+                  <div class="hero-img-wrapper">
+                    <img
+                      src="./assets/image/absurd_lightbuld.gif"
+                      alt="intro-img"
+                      width="350"
+                      class="img-fluid ml-5 d-none d-sm-block"
+                      id="hero-img"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="companies d-none d-sm-block">
+                <div class="row">
+                  <div class="col-md-5 pl-3 ml-0">
+                    <div style="padding-top: 3.5vh">
+                      <p>I've built solutions for . . .</p>
+                    </div>
+                  </div>
+                  <div class="col-md-7">
+                    <div class="d-flex flex-row-reverse" style="width: 100%">
+                      <div class="companies-img-wrapper pl-2">
+                        <a href="#experience">
+                          <img src="./assets/image/nyp-logo.png" alt="" class="img-fluid companies-logo mt-2" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="phrase-1">
+        <div class="single-page container d-flex justify-content-center flex-row align-items-center">
+          <div class="phrase-wrapper">
+            <div data-aos="fade-up" data-aos-duration="2500">
+              <div class="phrase">
+                Talk is <span>cheap</span> when your <span>words</span> have no <span>value</span>.
+              </div>
+              <!-- <div class="phrase">Hard work <span>beats talent</span> when talent doesn't <span>work hard.</span></div> -->
+            </div>
+            <div data-aos="fade-up" data-aos-duration="3000">
+              <div class="trait"></div>
+              <!-- <div class="quote-author d-inline">Tim Notke</div> -->
+              <div class="quote-author d-inline">Habeeb Akande</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section-->
+    <section>
+      <div class="experience" id="experience">
+        <div class="container single-page">
+          <div class="section-title">
+            <span class="section-title-number">01</span>
+            My Journey
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div
+                class="img-effect mt-4 d-none d-sm-block"
+                style="width: 500px; height: 500px; max-width: 100%; max-height: 100%"
+              ></div>
+            </div>
+            <div class="col-md-6">
+              <nav>
+                <div class="nav nav-tabs mt-1" id="nav-tab" role="tablist">
+                  <a
+                    class="nav-item nav-link active px-3"
+                    id="nav-home-tab"
+                    data-toggle="tab"
+                    href="#nav-home"
+                    role="tab"
+                    aria-controls="nav-home"
+                    aria-selected="true"
+                    >NYP</a
+                  >
+                  <a
+                    class="nav-item nav-link px-3"
+                    id="nav-profile-tab"
+                    data-toggle="tab"
+                    href="#nav-profile"
+                    role="tab"
+                    aria-controls="nav-profile"
+                    aria-selected="false"
+                    >Freelance</a
+                  >
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                  <!-- Content 1-->
+                  <div class="my-3"></div>
+
+                  <div class="d-flex justify-content-between">
+                    <h5 style="font-weight: 600" class="">Software Engineer</h5>
+                    <p style="font-weight: 600; color: #000000a6">Mar 2020 – May 2020</p>
+                  </div>
+
+                  <ul>
+                    <li>Developed and documented automation process with machine learning</li>
+                    <li>Created and integrated a program that classifies and sort email data in outlook</li>
+                    <li>
+                      Worked with UiPath (RPA) for automation process, Python for machine learning and various data
+                      science libraries
+                    </li>
+                  </ul>
+
+                  <div class="my-4"></div>
+
+                  <div class="d-flex justify-content-between mt-4">
+                    <h5 style="font-weight: 600">Full Stack Engineer</h5>
+                    <p style="font-weight: 600; color: #000000a6">Jul 2020 – Sept 2020</p>
+                  </div>
+                  <ul>
+                    <li>Created and maintained a web application with both back-end and front-end technologies</li>
+                    <li>Developed a chatbot and Learning Management System (LMS)with full content management system</li>
+                    <li>Developed using Python, framework and various libraries</li>
+                  </ul>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                  <!-- Content 2-->
+                  <div class="my-3"></div>
+
+                  <div class="d-flex justify-content-between">
+                    <h5 style="font-weight: 600" class="">Bartley Vue</h5>
+                    <p style="font-weight: 600; color: #000000a6">2021</p>
+                  </div>
+
+                  <ul>
+                    <li>Developed and Designed a responsive website for client from the ground up</li>
+                    <li>
+                      I designed the website with the objective of selling and displaying the product professionally.
+                    </li>
+                    <li>Worked closely with clients for incremental changes and development</li>
+                    <li>
+                      Client extremely pleased with the results
+                      <a href="https://bartleyvue.netlify.app/" target="_blank" class="text-reddish-brown">View Work</a>
+                    </li>
+                  </ul>
+
+                  <div class="my-4"></div>
+
+                  <div class="d-flex justify-content-between mt-4">
+                    <h5 style="font-weight: 600">Jia Fellas</h5>
+                    <p style="font-weight: 600; color: #000000a6">2021</p>
+                  </div>
+
+                  <ul>
+                    <li>Developed and Designed a responsive website for client from the ground up</li>
+                    <li>This website was developed to capture and feature client's products and services</li>
+                    <li>
+                      Client was extremely pleased with the final development
+                      <a href="https://jiafellas.netlify.app/" target="_blank" class="text-reddish-brown">View Work</a>
+                    </li>
+
+                    <p class="text-right mt-3" style="font-weight: 400">Repository is private</p>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="phrase-2">
+        <div class="container d-flex justify-content-center flex-row align-items-center">
+          <div class="phrase-wrapper">
+            <div class="phrase">
+              <div data-aos="fade-up" data-aos-duration="3000">
+                Don't just <span>take</span> my <span>words</span> for it. Here's what others <span>think</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section-->
+    <section>
+      <div class="testimonial" id="testimonial">
+        <div class="container single-page">
+          <div class="row">
+            <div class="col-md-7">
+              <div data-aos="fade-up" data-aos-duration="2500">
+                <div class="testimonial-box">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <div class="avatar">
+                        <img src="./assets/image/gary simon.png" alt="" class="img-fluid" />
+                      </div>
+                    </div>
+                    <div class="col-md-10">
+                      <div class="d-flex flex-row">
+                        <div class="quote-icon">
+                          <i class="fas fa-quote-left"></i>
+                        </div>
+                        <div class="information mt-4">
+                          <div class="quote">
+                            I'm gonna give this one <span>easily an 8 to 8.3</span>, all
+                            <span>pretty solid for the most part</span>
+                          </div>
+
+                          <div class="endorser">Gary Simon</div>
+                          <div class="position">Software Developer & UI/UX Designer</div>
+
+                          <div class="d-flex flex-flow justify-content-between mt-3">
+                            <div class="date">Sep 23, 2021</div>
+
+                            <div class="source text-right">
+                              <a href="https://youtu.be/K7KIpLxN7ms?t=583" class="text-dark visit-link" target="_blank"
+                                >Source <i class="fas fa-angle-right"></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div data-aos="fade-up" data-aos-duration="2500">
+                <div class="testimonial-box">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <div class="avatar">
+                        <img src="./assets/image/darian sampare.png" alt="" class="img-fluid" />
+                      </div>
+                    </div>
+                    <div class="col-md-10">
+                      <div class="d-flex flex-row">
+                        <div class="quote-icon">
+                          <i class="fas fa-quote-left"></i>
+                        </div>
+                        <div class="information mt-4">
+                          <div class="quote">
+                            Based on this portfolio, I would definitely bring you in for interview, looks like you know
+                            what you are doing, I think you're in a good spot &#8212;
+                          </div>
+
+                          <div class="endorser">Darian Sampare</div>
+                          <div class="position">Software Engineer</div>
+                          <div class="d-flex flex-flow justify-content-between mt-3">
+                            <div class="date">Jan 11, 2021</div>
+                            <div class="source text-right">
+                              <a href="https://youtu.be/d65ieDqdcEE?t=1107" class="text-dark visit-link" target="_blank"
+                                >Source <i class="fas fa-angle-right"></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div data-aos="fade-up" data-aos-duration="3000">
+                <img src="./assets/image/gallery-69-12.jpg" alt="" class="img-fluid mt-5" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section>
+      <div class="featured-projects" id="featured-projects">
+        <div class="container single-page">
+          <div class="section-title">
+            <span class="section-title-number">02</span>
+            Things I've Developed
+          </div>
+
+          <div data-aos="fade-up" data-aos-duration="2000">
+            <div class="featured-project-wrapper">
+              <div class="row">
+                <div class="col-md-6">
+                  <a href="https://university-analytics.netlify.app/" target="_blank">
+                    <div class="projects-wrapper">
+                      <div class="browser-bar text-white">
+                        <div class="d-flex justify-content-end mr-3">
+                          <div class="p-0">
+                            <div class="circle circle-red"></div>
+                          </div>
+                          <div class="p-0">
+                            <div class="circle circle-orange"></div>
+                          </div>
+                          <div class="p-0">
+                            <div class="circle circle-green"></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <img
+                        src="./assets/image/university-analysis.png"
+                        alt="university-analysis"
+                        class="img-fluid"
+                        loading="lazy"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-6 pl-5">
+                  <h6 class="featured-title">project - 001</h6>
+                  <h3>University Analytic</h3>
+                  <p class="text-justify">
+                    The purpose of this project is to present students at any level of institution with a simple and
+                    informative visualisation of the trends and analytics.
+                  </p>
+
+                  <p class="text-justify">
+                    This focuses on "Graduate Employment Survey" from Singapore's six local universities: NTU, NUS, SIT,
+                    SMU, SUSS, and SUTD.
+                  </p>
+
+                  <span class="badge-secondary badge badge-pill my-1">React</span>
+                  <span class="badge-secondary badge badge-pill my-1">Chart.js</span>
+                  <span class="badge-secondary badge badge-pill my-1">Axios</span>
+                  <span class="badge-secondary badge badge-pill my-1">data.gov.sg</span>
+
+                  <div class="d-flex justify-content-between mt-3">
+                    <div class="p-2 bd-highlight">
+                      <a
+                        href="https://university-analytics.netlify.app/"
+                        target="_blank"
+                        style="font-size: 1rem !important"
+                        class="text-reddish-brown visit-link"
+                      >
+                        Live Demo
+                        <i class="fas fa-angle-right"></i>
+                      </a>
+                    </div>
+                    <div class="p-2 bd-highlight" style="font-weight: 500">
+                      <a href="https://github.com/Tjandra-Putra/react-university-analysis-app" target="_blank">
+                        <p style="font-size: 1rem !important" class="text-reddish-brown visit-link">
+                          GitHub
+                          <i class="fas fa-angle-right"></i>
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-sine">
+            <div class="featured-project-wrapper">
+              <div class="row mt-5">
+                <div class="col-md-6">
+                  <a href="https://linkvine.herokuapp.com//" target="_blank">
+                    <div class="projects-wrapper">
+                      <div class="browser-bar text-white">
+                        <div class="d-flex justify-content-end mr-3">
+                          <div class="p-0">
+                            <div class="circle circle-red"></div>
+                          </div>
+                          <div class="p-0">
+                            <div class="circle circle-orange"></div>
+                          </div>
+                          <div class="p-0">
+                            <div class="circle circle-green"></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <img src="./assets/image/linkvine.png" alt="linkvine" class="img-fluid" loading="lazy" />
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-6 pl-5">
+                  <h6 class="featured-title">project - 002</h6>
+                  <h3>linkvine</h3>
+                  <p class="text-justify">
+                    linkvine allows you to create a personalised and easily-customizable page, that houses all the
+                    important links you want to share with your audience.
+                  </p>
+
+                  <p class="text-justify">
+                    From a single dashboard, all of your links may be easily created and managed in one spot.
+                  </p>
+
+                  <br />
+
+                  <span class="badge-secondary badge badge-pill my-1">Python</span>
+                  <span class="badge-secondary badge badge-pill my-1">Flask</span>
+                  <span class="badge-secondary badge badge-pill my-1">Amazon RDS</span>
+                  <span class="badge-secondary badge badge-pill my-1">Amazon S3</span>
+                  <span class="badge-secondary badge badge-pill my-1">Amazon Elastic Beanstalk</span>
+
+                  <div class="d-flex justify-content-between mt-3">
+                    <div class="p-2 bd-highlight">
+                      <a href="https://linkvine.herokuapp.com/" target="_blank">
+                        <p style="font-size: 1rem !important" class="text-reddish-brown visit-link">
+                          Live Demo
+                          <i class="fas fa-angle-right"></i>
+                        </p>
+                      </a>
+                    </div>
+                    <div class="p-2 bd-highlight" style="font-weight: 500">private</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-aos="fade-up" data-aos-duration="2000">
+            <div class="featured-project-wrapper">
+              <div class="row" style="margin-top: 5rem">
+                <div class="col-md-6">
+                  <a href="https://github.com/Tjandra-Putra/anico-ecommerce" target="_blank">
+                    <div class="projects-wrapper">
+                      <div class="browser-bar text-white">
+                        <div class="d-flex justify-content-end mr-3">
+                          <div class="p-0">
+                            <div class="circle circle-red"></div>
+                          </div>
+                          <div class="p-0">
+                            <div class="circle circle-orange"></div>
+                          </div>
+                          <div class="p-0">
+                            <div class="circle circle-green"></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="product-img-wrapper" style="height: 40vh; overflow-y: auto; overflow-x: hidden">
+                        <img src="./assets/image/anico-short.png" alt="loreus" class="img-fluid" />
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-6 pl-5">
+                  <h6 class="featured-title">project - 003</h6>
+                  <h3>anico</h3>
+                  <p class="text-justify">
+                    A simple, black-themed, and elegant website demonstrating fundamental ecommerce functions such as
+                    user authentication, add to cart, dynamic products, user support, and more.
+                  </p>
+
+                  <p class="text-justify">Simple but effective design allows for excellent user experience.</p>
+
+                  <span class="badge-secondary badge badge-pill my-1">ReactJs</span>
+                  <span class="badge-secondary badge badge-pill my-1">Redux</span>
+                  <span class="badge-secondary badge badge-pill my-1">Python</span>
+                  <span class="badge-secondary badge badge-pill my-1">Flask</span>
+                  <span class="badge-secondary badge badge-pill my-1">SQL Alchemy</span>
+                  <span class="badge-secondary badge badge-pill my-1">mySQL</span>
+
+                  <div class="d-flex justify-content-between mt-3">
+                    <div class="p-2 bd-highlight">
+                      <!-- <a href="https://loreus.netlify.app" target="_blank">
+                          <p style="font-size: 1rem !important" class="text-reddish-brown visit-link">
+                            Live Demo
+                            <i class="fas fa-angle-right"></i>
+                          </p>
+                        </a> -->
+                    </div>
+                    <div class="p-2 bd-highlight" style="font-weight: 500">
+                      <a href="https://github.com/Tjandra-Putra/anico-ecommerce" target="_blank">
+                        <p style="font-size: 1rem !important" class="text-reddish-brown visit-link">
+                          GitHub
+                          <i class="fas fa-angle-right"></i>
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-aos="fade-up" data-aos-duration="2000">
+            <div class="featured-project-wrapper">
+              <div class="row" style="margin-top: 5rem">
+                <div class="col-md-6">
+                  <a href="https://loreus.netlify.app" target="_blank">
+                    <div class="projects-wrapper">
+                      <div class="browser-bar text-white">
+                        <div class="d-flex justify-content-end mr-3">
+                          <div class="p-0">
+                            <div class="circle circle-red"></div>
+                          </div>
+                          <div class="p-0">
+                            <div class="circle circle-orange"></div>
+                          </div>
+                          <div class="p-0">
+                            <div class="circle circle-green"></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <img src="./assets/image/loreus.png" alt="loreus" class="img-fluid" loading="lazy" />
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-6 pl-5">
+                  <h6 class="featured-title">project - 003</h6>
+                  <h3>Loreus Shopping</h3>
+                  <p class="text-justify">
+                    This is a full stack ecommerce website. It demonstrates common features such as shopping cart,
+                    payment and delivery.
+                  </p>
+
+                  <p class="text-justify">Simple but effective design allows for excellent user experience.</p>
+
+                  <span class="badge-secondary badge badge-pill my-1">Ecommerce</span>
+                  <span class="badge-secondary badge badge-pill my-1">ReactJs</span>
+                  <span class="badge-secondary badge badge-pill my-1">mySQL</span>
+                  <span class="badge-secondary badge badge-pill my-1">Redux</span>
+
+                  <div class="d-flex justify-content-between mt-3">
+                    <div class="p-2 bd-highlight">
+                      <a href="https://loreus.netlify.app" target="_blank">
+                        <p style="font-size: 1rem !important" class="text-reddish-brown visit-link">
+                          Live Demo
+                          <i class="fas fa-angle-right"></i>
+                        </p>
+                      </a>
+                    </div>
+                    <div class="p-2 bd-highlight" style="font-weight: 500">
+                      <a href="https://github.com/Tjandra-Putra/loreus-ecommerce" target="_blank">
+                        <p style="font-size: 1rem !important" class="text-reddish-brown visit-link">
+                          GitHub
+                          <i class="fas fa-angle-right"></i>
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-aos="fade-up" data-aos-duration="2000">
+            <div class="featured-project-wrapper">
+              <div class="row" style="margin-top: 5rem">
+                <div class="col-md-6">
+                  <div class="projects-wrapper">
+                    <div class="browser-bar text-white">
+                      <div class="d-flex justify-content-end mr-3">
+                        <div class="p-0">
+                          <div class="circle circle-red"></div>
+                        </div>
+                        <div class="p-0">
+                          <div class="circle circle-orange"></div>
+                        </div>
+                        <div class="p-0">
+                          <div class="circle circle-green"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <video
+                      loading="lazy"
+                      controls=""
+                      poster="./assets/image/shopee.png"
+                      style="object-fit: cover"
+                      height="320"
+                      class="embed-responsive embed-responsive-16by9 img-shadow-default"
+                      muted
+                    >
+                      <source src="./assets/video/shopee ui ux.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                </div>
+                <div class="col-md-6 pl-5">
+                  <h6 class="featured-title">project - 004</h6>
+                  <h3>Shopee UI/UX concepts</h3>
+
+                  <p class="text-justify">This project is made possible by SMU DSC UI/UX Competition 2022.</p>
+
+                  <p class="text-justify">
+                    The goal is to improve Shopee's existing mobile application in UI and UX design in order to boost
+                    customer experience.
+                  </p>
+
+                  <span class="badge-secondary badge badge-pill my-1">Figma</span>
+                  <span class="badge-secondary badge badge-pill my-1">UI/UX Design</span>
+                  <span class="badge-secondary badge badge-pill my-1">Ecommerce</span>
+                  <span class="badge-secondary badge badge-pill my-1">Shopee</span>
+
+                  <div class="d-flex justify-content-between mt-3">
+                    <div class="p-2 bd-highlight">
+                      <a
+                        href="https://www.figma.com/proto/1oqO8ihw5yYMNVFMO03hbu/main?scaling=scale-down&page-id=0%3A1&node-id=6%3A330&starting-point-node-id=6%3A330"
+                        target="_blank"
+                      >
+                        <p style="font-size: 1rem !important" class="text-reddish-brown visit-link">
+                          Live Demo
+                          <i class="fas fa-angle-right"></i>
+                        </p>
+                      </a>
+                    </div>
+                    <div class="p-2 bd-highlight" style="font-weight: 500">
+                      <a href="https://www.figma.com/file/1oqO8ihw5yYMNVFMO03hbu/main?node-id=0%3A1" target="_blank">
+                        <p style="font-size: 1rem !important" class="text-reddish-brown visit-link">
+                          Workflow
+                          <i class="fas fa-angle-right"></i>
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div data-aos="fade-up" data-aos-duration="2000">
+            <div class="featured-project-wrapper">
+              <div class="row" style="margin-top: 5rem">
+                <div class="col-md-6">
+                  <div class="projects-wrapper">
+                    <div class="browser-bar text-white">
+                      <div class="d-flex justify-content-end mr-3">
+                        <div class="p-0">
+                          <div class="circle circle-red"></div>
+                        </div>
+                        <div class="p-0">
+                          <div class="circle circle-orange"></div>
+                        </div>
+                        <div class="p-0">
+                          <div class="circle circle-green"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <video
+                      loading="lazy"
+                      height="320"
+                      controls=""
+                      poster="./assets/image/classification_automation.png"
+                      style="object-fit: cover"
+                      class="embed-responsive embed-responsive-16by9 img-shadow-default"
+                      muted
+                    >
+                      <source src="./assets/video/FYPJ_text_clasification.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                </div>
+                <div class="col-md-6 pl-5">
+                  <h6 class="featured-title">project - 005</h6>
+                  <h3>Classification Automation</h3>
+                  <p class="text-justify">
+                    This program makes use Robotic Process Automation (RPA) and Machine Learning using Python. The
+                    objective is to automatically classify and sort email data in outlook mail into its own folder.
+                  </p>
+
+                  <p class="text-justify">
+                    This includes: automated email extraction, automated folder sorting and optimized execution time.
+                  </p>
+
+                  <span class="badge-secondary badge badge-pill my-1">Python</span>
+                  <span class="badge-secondary badge badge-pill my-1">UiPath</span>
+                  <span class="badge-secondary badge badge-pill my-1">Sci-kit Learn</span>
+                  <span class="badge-secondary badge badge-pill my-1">Automation</span>
+                  <span class="badge-secondary badge badge-pill my-1">Machine Learning</span>
+
+                  <div class="d-flex justify-content-between mt-3">
+                    <div class="p-2 bd-highlight"></div>
+                    <div class="p-2 bd-highlight" style="font-weight: 300">private</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <div class="container-fluid p-0">
+      <div class="wrapper-product">
+        <div class="marquee container">
+          <p>Explore - Explore - Explore - Explore - Explore - Explore - Explore - Explore - Explore -&nbsp;</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Other Projects -->
+    <section>
+      <div class="other-projects">
+        <div class="container single-page">
+          <div class="d-flex flex-row">
+            <div class="section-title" style="min-width: 12em">
+              <span class="section-title-number">03</span>
+              Explore Other Projects
+            </div>
+            <div class="custom-line"></div>
+          </div>
+
+          <!-- Automation Project-->
+          <div class="slider-container">
+            <div class="d-flex flex-row justify-content-between">
+              <div class="slider-title">Robotic Process Automation</div>
+              <div class="controller">
+                <div>
+                  <div id="controls-automation" class="text-right">
+                    <button class="btn btn-dark previous btn-slider">
+                      <i class="fas fa-angle-left"></i>
+                    </button>
+                    <button class="btn btn-dark next btn-slider">
+                      <i class="fas fa-angle-right"></i>
+                    </button>
+                  </div>
+                  <br />
+                </div>
+              </div>
+            </div>
+            <div class="slider-wrapper">
+              <div class="my-slider-automation">
+                <div class="project-container">
+                  <div class="project-container-inner">
+                    <video
+                      loading="lazy"
+                      controls=""
+                      style="object-fit: cover"
+                      class="embed-responsive embed-responsive-16by9 other-projects-img"
+                    >
+                      <source src="./assets/video/FYPJ_text_clasification.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div class="d-flex flex-row justify-content-between mt-3">
+                    <div class="project-title">Classification Automation</div>
+                    <div class="detail">
+                      <a
+                        data-toggle="modal"
+                        data-target="#modalOtherProjectAutomation0"
+                        class="text-reddish-brown visit-link"
+                      >
+                        View Details
+                        <i class="fas fa-angle-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="project-container">
+                  <div class="project-container-inner">
+                    <video
+                      loading="lazy"
+                      controls=""
+                      style="object-fit: cover"
+                      class="embed-responsive embed-responsive-16by9 other-projects-img"
+                    >
+                      <source src="./assets/video/RPA_Applicants Tracking System.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div class="d-flex flex-row justify-content-between mt-3">
+                    <div class="project-title">Candidate Sourcing</div>
+                    <div class="detail">
+                      <a
+                        data-toggle="modal"
+                        data-target="#modalOtherProjectAutomation1"
+                        class="text-reddish-brown visit-link"
+                      >
+                        View Details
+                        <i class="fas fa-angle-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="project-container">
+                  <div class="project-container-inner">
+                    <video
+                      loading="lazy"
+                      controls=""
+                      style="object-fit: cover"
+                      class="embed-responsive embed-responsive-16by9 other-projects-img"
+                    >
+                      <source src="./assets/video/RPA_Email_Automation.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div class="d-flex flex-row justify-content-between mt-3">
+                    <div class="project-title">Email Automation</div>
+                    <div class="detail">
+                      <a
+                        data-toggle="modal"
+                        data-target="#modalOtherProjectAutomation2"
+                        class="text-reddish-brown visit-link"
+                      >
+                        View Details
+                        <i class="fas fa-angle-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="project-container">
+                  <div class="project-container-inner">
+                    <video
+                      loading="lazy"
+                      controls=""
+                      style="object-fit: cover"
+                      class="embed-responsive embed-responsive-16by9 other-projects-img"
+                    >
+                      <source src="./assets/video/Google Automation.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div class="d-flex flex-row justify-content-between mt-3">
+                    <div class="project-title">Google Form Automation</div>
+                    <div class="detail">
+                      <a
+                        data-toggle="modal"
+                        data-target="#modalOtherProjectAutomation3"
+                        class="text-reddish-brown visit-link"
+                      >
+                        View Details
+                        <i class="fas fa-angle-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div data-aos="fade-up" data-aos-duration="2000">
+      <div class="connect" id="connect">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div data-aos="zoom-out-right" data-aos-duration="2000">
+                <div class="title mt-5">Get In Touch</div>
+              </div>
+
+              <div data-aos="fade-up" data-aos-duration="2100">
+                <div class="box">
+                  <div class="heading">Building something out of nothing & getting inspired.</div>
+
+                  <div class="description">
+                    Excellent track record of working effectively with people as well as adapting to and overcoming
+                    challenges. Striving to leverage my technical skills in Information Technology field and analytical
+                    skills in Business at your organization.
+                  </div>
+
+                  <hr class="bg-dark my-4" />
+
+                  <div class="text-right">
+                    <a
+                      href="https://www.linkedin.com/in/tjandra-putra/"
+                      target="_blank"
+                      class="text-dark text-decoration-none visit-link"
+                    >
+                      Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div data-aos="fade-up" data-aos-duration="2300">
+                <div class="heading-question">Do you have a new project or just want to say hello?</div>
+              </div>
+
+              <div data-aos="fade-up" data-aos-duration="2500">
+                <div class="description-right">
+                  My mailbox is always open and I'll do my best to respond to you, whether you have a question or simply
+                  want to say hello!
+                </div>
+              </div>
+
+              <div data-aos="fade-up" data-aos-duration="2600">
+                <a href="mailto:tjandrap.2021@scis.smu.edu.sg" target="_blank" class="contact-say-hello">
+                  Say Hello! <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer>
+          <div class="container">
+            <div class="row">
+              <class class="col-md-8 mt-2 text-white" style="font-weight: 300">
+                <div class="copyright-footer">
+                  Copyright &#169; 2020-<span id="copyright"></span> Tjandra (Version 5.0)
+                </div>
+              </class>
+              <div class="col-md-4 mt-2">
+                <div class="d-flex justify-content-center">
+                  <div class="px-4 bd-highlight">
+                    <a class="footer-link text-beet-red" href="https://github.com/Tjandra-Putra" target="_blank"
+                      >github</a
+                    >
+                  </div>
+                  <div class="px-4 bd-highlight">
+                    <a
+                      class="footer-link text-beet-red"
+                      href="https://www.linkedin.com/in/tjandra-putra/"
+                      target="_blank"
+                      >linkedin</a
+                    >
+                  </div>
+                  <div class="px-4 bd-highlight">
+                    <a href="mailto:tjandrap.2021@scis.smu.edu.sg" target="_blank" class="footer-link text-beet-red">
+                      email
+                    </a>
+                  </div>
+                  <div class="px-4 bd-highlight">
+                    <a href="#" class="footer-link text-beet-red"> top </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- ====================== Modal Section ======================= -->
+    <!-- Other Projects: Automation -->
+    <!-- Project #0 -->
+    <div
+      class="modal fade"
+      id="modalOtherProjectAutomation0"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Classification Automation</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">
+                <img src="./assets/image/cancel.png" width="20" alt="" class="img-fluid" style="margin-top: 0rem" />
+              </span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              This program makes use Robotic Process Automation (RPA) and Machine Learning using Python. The objective
+              is to automatically classify and sort email data in outlook mail into its own folder.
+            </p>
+            <p>This includes: automated email extraction, automated folder sorting and optimized execution time.</p>
+          </div>
+          <div class="modal-footer">
+            <a
+              href="https://github.com/Tjandra-Putra/automation-project/tree/master/Applicant%20Tracking%20System"
+              class="btn btn-dark"
+              target="_blank"
+            >
+              <i class="fab fa-github-alt"></i> Github
+            </a>
+            <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project #1 -->
+    <div
+      class="modal fade"
+      id="modalOtherProjectAutomation1"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Candidate Sourcing</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">
+                <img src="./assets/image/cancel.png" width="20" alt="" class="img-fluid" style="margin-top: 0rem" />
+              </span>
+            </button>
+          </div>
+          <div class="modal-body">
+            This workflow automates and filters applicants' resume(.PDF) or any other documents(.PDF) based on "Key
+            Words".
+          </div>
+          <div class="modal-footer">
+            <a
+              href="https://github.com/Tjandra-Putra/automation-project/tree/master/Applicant%20Tracking%20System"
+              class="btn btn-dark"
+              target="_blank"
+            >
+              <i class="fab fa-github-alt"></i> Github
+            </a>
+            <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project #2 -->
+    <div
+      class="modal fade"
+      id="modalOtherProjectAutomation2"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Email Automation</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">
+                <img src="./assets/image/cancel.png" width="20" alt="" class="img-fluid" style="margin-top: 0rem" />
+              </span>
+            </button>
+          </div>
+          <div class="modal-body">
+            This work flow sends multiple SMTP emails based on excel input. User can choose different email accounts to
+            send emails.
+          </div>
+          <div class="modal-footer">
+            <a
+              href="https://github.com/Tjandra-Putra/automation-project/tree/master/Email%20Automation"
+              class="btn btn-dark"
+              target="_blank"
+            >
+              <i class="fab fa-github-alt"></i> Github
+            </a>
+            <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project #3 -->
+    <div
+      class="modal fade"
+      id="modalOtherProjectAutomation3"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Email Automation</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">
+                <img src="./assets/image/cancel.png" width="20" alt="" class="img-fluid" style="margin-top: 0rem" />
+              </span>
+            </button>
+          </div>
+          <div class="modal-body">
+            This workflow automates and fill google forms base on excel inputs. It allows for effective and efficient
+            process eliminating repetitive process.
+          </div>
+          <div class="modal-footer">
+            <a
+              href="https://github.com/Tjandra-Putra/automation-project/tree/master/Google%20Form%20Automation"
+              class="btn btn-dark"
+              target="_blank"
+            >
+              <i class="fab fa-github-alt"></i> Github
+            </a>
+            <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating Components -->
+    <section>
+      <div class="side-email d-none d-sm-block">
+        <div class="d-flex flex-column bd-highlight">
+          <div class="bd-highlight text-center mb-4">
+            <a href="mailto:tjandrap.2021@scis.smu.edu.sg" target="_blank" class="email hvr-bob" id="side-email">
+              tjandrap.2021@scis.smu.edu.sg
+            </a>
+          </div>
+          <div class="bd-highlight text-center justify-content-center">
+            <div class="vertical-line" id="vertical-line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="side-social-links d-none d-sm-block">
+        <div class="d-flex flex-column bd-highlight mb-3">
+          <div class="p-1 bd-highlight text-center" id="side-nav-email">
+            <a
+              href="mailto:tjandrap.2021@scis.smu.edu.sg"
+              target="_blank"
+              class="side-social-link"
+              style="-webkit-text-stroke: 0px white"
+            ></a>
+            <i class="far fa-paper-plane"></i>
+          </div>
+          <div class="p-1 bd-highlight text-center">
+            <a href="https://github.com/Tjandra-Putra" target="_blank" class="side-social-link" id="side-nav-github">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-github"
+              >
+                <title>GitHub</title>
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div class="p-1 bd-highlight text-center">
+            <a
+              href="https://www.linkedin.com/in/tjandra-putra/"
+              target="_blank"
+              class="side-social-link"
+              id="side-nav-linkedin"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-linkedin"
+              >
+                <title>LinkedIn</title>
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-music" onclick="musicHandler()">
+        <img
+          src="./assets/image/pause.png"
+          width="30"
+          alt=""
+          class="img-fluid mt-3 bg-music"
+          id="pause"
+          style="visibility: visible"
+        />
+
+        <img
+          src="./assets/image/sound.gif"
+          width="30"
+          alt=""
+          class="img-fluid mt-3 bg-music"
+          id="play"
+          style="visibility: hidden; mix-blend-mode: difference"
+        />
+
+        <audio
+          src="./assets/music/y2mate.com - Hanezeve Caradhina A Made In Abyss Orchestration Ft Un3h (mp3cut.net).mp3"
+          id="myMusic"
+          style="display: block"
+          loop
+        ></audio>
+      </div>
+    </section>
+    <!-- ========================== TINY SLIDER ==========================  -->
+    <script>
+      let sliderAutomation = tns({
+        container: ".my-slider-automation",
+        slideBy: 1,
+        speed: 400,
+        nav: false,
+        loop: false,
+        fixedWidth: 500,
+        // edgePadding: 10,
+        mouseDrag: true,
+        controlsContainer: "#controls-automation",
+        prevButton: ".previous",
+        nextButton: ".next",
+        responsive: {
+          1600: {
+            items: 4,
+            gutter: 20,
+          },
+          1024: {
+            items: 3,
+            gutter: 20,
+          },
+          768: {
+            items: 2,
+            gutter: 20,
+          },
+          480: {
+            items: 1,
+          },
+        },
+      });
+    </script>
+
+    <!-- Animate On Scroll -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Animate -->
+    <script src="./library/animate/animate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    <!--  Type -->
+    <script src="./library/type/typed.js"></script>
+
+    <!-- Three.js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"
+      integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- TweenMax -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="./library/hover-image/hover-effect.umd.js"></script>
+
+    <!-- Tipsy ToolTip-->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+
+    <!-- Pointer -->
+    <script src="./library/pointer/pointer.js"></script>
+
+    <!-- Bootstrap -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom JS -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>

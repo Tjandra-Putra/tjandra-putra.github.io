@@ -1,0 +1,235 @@
+// ======================= INTRODUCTION MODAL ======================
+// function resizeForm() {
+//   // only runs on desktop
+//   var width =
+//     window.innerWidth > 0
+//       ? window.innerWidth
+//       : document.documentElement.clientWidth;
+//   if (width > 1024) {
+//     setTimeout(function () {
+//       $("#introduction-modal").modal("show");
+//     }, 3700);
+//   } else {
+//   }
+// }
+
+// window.onresize = resizeForm;
+// resizeForm();
+
+// setTimeout(function () {
+//   $("#introduction-modal").modal("show");
+// }, 3300);
+
+// Modal Animation on show
+// $("#introduction-modal").on("show.bs.modal", function (e) {
+//   $("#introduction-modal").attr(
+//     "class",
+//     "modal animate__animated animate__slideInDown"
+//   );
+// });
+
+// $("#archive-modal").on("show.bs.modal", function (e) {
+//   $("#archive-modal").attr(
+//     "class",
+//     "modal animate__animated animate__bounceInDown"
+//   );
+// });
+
+// ========================== TYPE.JS ==========================
+// strings: [ 'Data Analyst.', 'Web Developer.', 'Mobile Developer.', 'RPA Developer.', 'UI/UX Designer.' ]
+var typed = new Typed(".type", {
+  strings: ["Software Engineer.", "UI/UX Designer."],
+  typeSpeed: 50,
+  backSpeed: 50,
+  loop: true,
+});
+
+// ========================== NAVIGATION BAR CUSTOM ==========================
+document.getElementById("navbar").style.background = "white";
+
+window.addEventListener("scroll", (event) => {
+  let scroll = this.scrollY;
+  if (scroll > 700) {
+    document.getElementById("navbar").style.background = "white";
+  } else {
+    document.getElementById("navbar").style.background = "white";
+  }
+
+  // for icons
+  if (scroll > 6970) {
+    document.getElementById("side-nav-github").style.color = "white";
+    document.getElementById("side-nav-linkedin").style.color = "white";
+    document.getElementById("side-nav-email").style.color = "white";
+    document.getElementById("side-email").style.color = "white";
+    document.getElementById("pause").style.filter = "invert(100)";
+    document.getElementById("play").style.filter = "invert(100)";
+    document.getElementById("vertical-line").style.borderColor = "white";
+  } else {
+    document.getElementById("side-nav-github").style.color = "black";
+    document.getElementById("side-nav-linkedin").style.color = "black";
+    document.getElementById("side-nav-email").style.color = "black";
+    document.getElementById("side-email").style.color = "black";
+    document.getElementById("pause").style.filter = "none";
+    document.getElementById("play").style.filter = "none";
+    document.getElementById("vertical-line").style.borderColor = "black";
+  }
+
+  console.log(scroll);
+});
+
+// Navbar sticky hidden when user scrolls up
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+    // document.getElementById("nav-horizontal-line").style.top = "45px";
+  } else {
+    document.getElementById("navbar").style.top = "-100px";
+    // document.getElementById("nav-horizontal-line").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+};
+
+// ========================== ANIMATE ON SCROLL ==========================
+AOS.init({
+  once: true,
+});
+
+// ========================== POINTER.JS CURSON ==========================
+init_pointer({
+  pointerColor: "#222",
+  ringSize: 15,
+  ringClickSize: 10,
+});
+
+// ========================== CUSTOM MUSIC PLAYER ==========================
+// Bg Music
+var isPlaying = false;
+
+var audio = document.getElementById("myMusic");
+// audio.volume = 0.3;
+// audio.volume = 0.1;
+
+// audio.play();
+
+function musicHandler() {
+  var audio = document.getElementById("myMusic");
+
+  if (isPlaying === false) {
+    isPlaying = true;
+    audio.play();
+
+    var iconPause = document.getElementById("pause");
+    var iconPlay = document.getElementById("play");
+    iconPlay.style.visibility = "visible";
+
+    iconPause.style.visibility = "hidden";
+  } else if (isPlaying === true) {
+    isPlaying = false;
+    audio.pause();
+
+    var iconPause = document.getElementById("pause");
+    var iconPlay = document.getElementById("play");
+    iconPlay.style.visibility = "hidden";
+
+    iconPause.style.visibility = "visible";
+  }
+}
+
+function navMusicHandler() {
+  var audio = document.getElementById("myMusic");
+
+  if (isPlaying === false) {
+    isPlaying = true;
+    audio.play();
+
+    var iconPause = document.getElementById("pause");
+    var iconPlay = document.getElementById("play");
+    iconPlay.style.visibility = "visible";
+
+    iconPause.style.visibility = "hidden";
+  }
+}
+
+// ========================== TOOL TIP ==========================
+tippy("#side-nav-email", {
+  content: "Email",
+  animation: "scale",
+  duration: 500,
+  placement: "left",
+});
+
+tippy("#side-nav-github", {
+  content: "Github",
+  animation: "scale",
+  duration: 500,
+  placement: "left",
+});
+
+tippy("#side-nav-linkedin", {
+  content: "LinkedIn",
+  animation: "scale",
+  duration: 500,
+  placement: "left",
+});
+
+tippy("#nav-home-tab", {
+  content: "Nanyang Polytechnic",
+  animation: "scale",
+  duration: 500,
+});
+
+tippy("#about-smu", {
+  content: "Bachelor of Science Information Systems Major",
+  animation: "scale",
+  duration: 500,
+});
+
+tippy("#about-nyp", {
+  content: "Diploma in Business Informatics",
+  animation: "scale",
+  duration: 500,
+});
+
+// tippy("#play", {
+//     content:
+//         "Currently Playing: \n The Power of Balance Rearranged  An Avatar Orchestrations",
+//     animation: "scale",
+//     duration: 500,
+// });
+
+tippy("#play", {
+  content: "Currently Playing: \n Hanezeve Caradhina A Made In Abyss",
+  animation: "scale",
+  duration: 500,
+});
+
+// tippy("#play", {
+//   content: "Currently Playing: \n Falling Through the Hourglass",
+//   animation: "scale",
+//   duration: 500,
+// });
+
+// tippy("#play", {
+//   content: "Currently Playing: \n Kazukii - Time We Lost",
+//   animation: "scale",
+//   duration: 500,
+// });
+
+// ========================== IMAGE HOVER EFFECT DISTORTION ==========================
+new hoverEffect({
+  parent: document.querySelector(".img-effect"),
+  intensity1: 1,
+  intensity2: 2,
+  speedIn: 1,
+  speedOut: 1,
+  image1: "./assets/image/04.png",
+  image2: "./assets/image/03.png",
+  displacementImage: "./assets/image/displacement.jpg",
+});
+
+// ========================== GET CURRENT YEAR FOR COPYRIGHT ==========================
+document.getElementById("copyright").appendChild(document.createTextNode(new Date().getFullYear()));
+
+// ========================== TINY SLIDER  ==========================
