@@ -33,8 +33,8 @@
     <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
 
     <!-- Tiny Slider -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    <link rel="stylesheet" href="./library/tiny-slider/tiny-slider.css" />
+    <script src="./library/tiny-slider/tiny-slider.js"></script>
 
     <!-- Custom Styling -->
     <link rel="stylesheet" href="./css/style.css" />
@@ -580,7 +580,7 @@
                         </div>
                       </div>
 
-                      <div class="product-img-wrapper" style="height: 40vh; overflow-y: auto; overflow-x: hidden">
+                      <div class="product-img-wrapper" style="height: auto; overflow-y: auto; overflow-x: hidden">
                         <img src="./assets/image/anico-short.png" alt="loreus" class="img-fluid" />
                       </div>
                     </div>
@@ -1098,13 +1098,7 @@
             <p>This includes: automated email extraction, automated folder sorting and optimized execution time.</p>
           </div>
           <div class="modal-footer">
-            <a
-              href="https://github.com/Tjandra-Putra/automation-project/tree/master/Applicant%20Tracking%20System"
-              class="btn btn-dark"
-              target="_blank"
-            >
-              <i class="fab fa-github-alt"></i> Github
-            </a>
+            <button class="btn btn-dark" target="_blank" disabled><i class="fas fa-lock"></i> Private</button>
             <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
           </div>
         </div>
@@ -1197,7 +1191,7 @@
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Email Automation</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Google Form Automation</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">
                 <img src="./assets/image/cancel.png" width="20" alt="" class="img-fluid" style="margin-top: 0rem" />
@@ -1323,16 +1317,16 @@
         ></audio>
       </div>
     </section>
+
     <!-- ========================== TINY SLIDER ==========================  -->
     <script>
       let sliderAutomation = tns({
         container: ".my-slider-automation",
-        slideBy: 1,
+        slideBy: 2,
         speed: 400,
         nav: false,
         loop: false,
         fixedWidth: 500,
-        // edgePadding: 10,
         mouseDrag: true,
         controlsContainer: "#controls-automation",
         prevButton: ".previous",
