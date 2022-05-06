@@ -667,7 +667,8 @@ body {
 .featured-projects .projects-wrapper {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   border-radius: 10px 10px 0 0;
-  overflow: hidden;
+  overflow: auto;
+  max-height: 45vh;
 }
 
 .featured-projects .featured-project-wrapper:hover .projects-wrapper img {
