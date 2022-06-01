@@ -20,7 +20,7 @@
 //   $("#introduction-modal").modal("show");
 // }, 3300);
 
-// Modal Animation on show
+// // Modal Animation on show
 // $("#introduction-modal").on("show.bs.modal", function (e) {
 //   $("#introduction-modal").attr(
 //     "class",
@@ -231,5 +231,3 @@ new hoverEffect({
 
 // ========================== GET CURRENT YEAR FOR COPYRIGHT ==========================
 document.getElementById("copyright").appendChild(document.createTextNode(new Date().getFullYear()));
-
-// ========================== TINY SLIDER  ==========================
