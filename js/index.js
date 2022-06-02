@@ -200,7 +200,7 @@ tippy("#about-nyp", {
 // });
 
 tippy("#play", {
-  content: "Currently Playing: \n Hanezeve Caradhina A Made In Abyss",
+  content: "Currently Playing: \n Falling Through The Hour Glass",
   animation: "scale",
   duration: 500,
 });

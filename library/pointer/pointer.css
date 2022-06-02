@@ -1,6 +1,6 @@
 #pointer-dot {
-  left: -19px;
-  top: -13.5px;
+  left: -6.8px;
+  top: -9.5px;
   width: 0px;
   height: 0;
   /* border: 18px solid white !important; */
@@ -32,15 +32,16 @@
   height: 50px;
   /* left: -27px;
   top: -20px; */
-  left: -22.5px;
-  top: -16.5px;
+  left: -10.5px;
+  top: -13px;
 }
 
 html {
   cursor: none;
 }
+
 video {
-  cursor: default;
+  cursor: none !important;
 }
 
 a,

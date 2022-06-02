@@ -548,7 +548,7 @@ body {
 }
 
 .testimonial {
-  border-bottom: 10px double rgb(0, 0, 0);
+  border-bottom: 7px double rgb(0, 0, 0);
 }
 
 .testimonial .container {
@@ -686,15 +686,15 @@ body {
 } */
 
 .featured-projects {
-  padding-top: 17vh;
+  padding-top: 15vh;
 }
 
 .featured-projects .projects-wrapper {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   border-radius: 10px 10px 0 0;
   overflow-x: hidden;
-  overflow-y: auto;
-  height: 42vh;
+  overflow-y: hidden;
+  height: 43vh;
 }
 
 .featured-projects .projects-wrapper::-webkit-scrollbar {
@@ -1049,13 +1049,12 @@ footer .copyright-footer {
 .footer-link:hover {
   transform: translateY(-0.1rem) !important;
   transition: 0.4s ease-in-out;
-  font-weight: 600;
-  color: #ffffff;
+  font-weight: 600 !important;
+  color: #ffffff !important;
 }
 
 .footer-link {
   font-weight: 400 !important;
-  transition: 0.3s ease-in;
   color: #ffffffd7;
 }
 
@@ -1064,9 +1063,8 @@ footer .text-footer {
   background-image: linear-gradient(135deg, rgba(42, 245, 152, 1), rgba(0, 158, 253, 1) 100%, rgba(42, 245, 152, 1));
 }
 
-/** MOBILE VERSION **/
-/**   PIXEL 2XL **/
-@media only screen and (min-device-width: 411px) and (max-device-width: 823px) {
+/** MOBILE DEVICES **/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   #pointer-dot {
     display: none !important;
   }
@@ -1125,6 +1123,7 @@ footer .text-footer {
     line-height: 1.1em;
     width: 100%;
     align-items: center;
+    text-align: center;
   }
 
   .experience li {
@@ -1244,5 +1243,201 @@ footer .text-footer {
   footer .copyright-footer {
     font-size: 0.9rem !important;
     text-align: center;
+  }
+}
+
+/** TABLET DEVICES **/
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  #pointer-dot {
+    display: none !important;
+  }
+
+  #pointer-ring {
+    display: none !important;
+  }
+
+  header .hero-message {
+    min-height: calc(100vh);
+    align-items: center;
+    display: flex;
+  }
+
+  header .navbar {
+    text-align: center;
+  }
+
+  header .navbar .nav-item {
+    padding: unset;
+  }
+
+  header .hero-title {
+    font-size: 1.8rem !important;
+    line-height: 2.5rem;
+    text-align: center;
+    margin: auto;
+  }
+
+  header .hero-tag,
+  #personal-quality {
+    font-size: 1rem !important;
+    width: 100%;
+    text-align: center;
+  }
+
+  header .buttons {
+    margin: auto;
+  }
+
+  .phrase-1 .phrase {
+    font-size: 2rem;
+    line-height: 1.2em;
+    max-width: 20rem;
+    align-items: center;
+    padding-bottom: 3rem;
+    font-weight: 400;
+  }
+
+  .phrase-1 .quote-author {
+    font-size: 1.2rem;
+  }
+
+  .phrase-2 .phrase {
+    font-size: 2rem;
+    line-height: 1.1em;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .experience li {
+    font-size: 1rem !important;
+  }
+
+  .experience h5 {
+    font-size: 1.1rem;
+  }
+
+  .testimonial .avatar {
+    margin-bottom: 1.2rem;
+  }
+
+  .testimonial .quote {
+    font-size: 1.2rem;
+  }
+
+  .testimonial .endorser,
+  .testimonial .position,
+  .testimonial .date {
+    font-size: 1rem !important;
+  }
+
+  .featured-projects .featured-project-wrapper .col-md-6:first-child {
+    margin-bottom: 1rem;
+  }
+
+  .featured-projects .featured-project-wrapper .col-md-6:nth-child(2) {
+    padding-left: 1rem !important;
+  }
+
+  .featured-projects h3 {
+    font-size: 1.3rem;
+  }
+
+  .featured-project-wrapper p {
+    font-size: 1rem !important;
+    text-align: left !important;
+  }
+
+  .projects-wrapper {
+    height: 15rem !important;
+  }
+
+  .projects-wrapper video {
+    height: 90%;
+  }
+
+  .other-projects .section-title {
+    width: 100%;
+    min-width: unset !important;
+  }
+
+  .carousel .item {
+    scroll-snap-align: start;
+    flex: none;
+    margin-right: 1rem;
+    width: 19rem !important;
+    height: 100%;
+    padding-bottom: 1rem;
+  }
+
+  .carousel .item video {
+    height: 100%;
+  }
+
+  .carousel .item .project-title,
+  .carousel .item .visit-link {
+    font-size: 0.9rem;
+  }
+
+  .other-projects .carousel-title {
+    font-size: 1.1rem;
+  }
+
+  .connect .heading {
+    font-size: 1.2rem !important;
+    text-align: left;
+    line-height: 1.7rem !important;
+    letter-spacing: 1px;
+    font-weight: 600 !important;
+  }
+
+  .connect .title {
+    color: #ffffff !important;
+  }
+
+  .connect .description {
+    font-size: 1rem !important;
+    text-align: left !important;
+  }
+
+  .connect .heading-question {
+    text-align: left !important;
+    line-height: 2.3rem !important;
+  }
+
+  .connect .description-right {
+    font-size: 1rem !important;
+    line-height: unset;
+    letter-spacing: 1px;
+  }
+
+  .connect .contact-say-hello {
+    font-size: 3.3rem;
+    max-width: 1rem;
+  }
+
+  .section-title,
+  .connect .title,
+  .connect .heading-question {
+    font-size: 1.8rem !important;
+    text-align: center;
+  }
+
+  footer .copyright-footer {
+    font-size: 0.9rem !important;
+    text-align: center;
+  }
+
+  footer {
+    margin-top: 4rem;
+  }
+
+  .container {
+    margin-left: unset;
+    margin-right: unset;
+  }
+
+  .other-projects .single-page {
+    min-height: 50vh;
   }
 }
