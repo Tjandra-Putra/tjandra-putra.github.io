@@ -32,10 +32,6 @@
     <!-- Tipsy ToolTip -->
     <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
 
-    <!-- Tiny Slider -->
-    <link rel="stylesheet" href="./library/tiny-slider/tiny-slider.css" />
-    <script src="./library/tiny-slider/tiny-slider.js"></script>
-
     <!-- Custom Styling -->
     <link rel="stylesheet" href="./css/style.css" />
 
@@ -1296,15 +1292,16 @@
 
       <div class="side-social-links d-none d-sm-block">
         <div class="d-flex flex-column bd-highlight mb-3">
-          <div class="p-1 bd-highlight text-center" id="side-nav-email">
+          <div class="p-1 bd-highlight text-center">
             <div data-aos="fade-up" data-aos-duration="2900">
               <a
                 href="mailto:tjandrap.2021@scis.smu.edu.sg"
                 target="_blank"
                 class="side-social-link"
-                style="-webkit-text-stroke: 0px white"
-              ></a>
-              <i class="far fa-paper-plane"></i>
+                id="side-nav-email"
+              >
+                <i class="far fa-paper-plane" style="-webkit-text-stroke: 0.3px white !important"></i>
+              </a>
             </div>
           </div>
           <div class="p-1 bd-highlight text-center">
@@ -1386,39 +1383,6 @@
         ></audio>
       </div>
     </section>
-
-    <!-- ========================== TINY SLIDER ==========================  -->
-    <!-- <script>
-      let sliderAutomation = tns({
-        container: ".my-slider-automation",
-        slideBy: 2,
-        speed: 400,
-        nav: false,
-        loop: false,
-        fixedWidth: 500,
-        mouseDrag: true,
-        controlsContainer: "#controls-automation",
-        prevButton: ".previous",
-        nextButton: ".next",
-        responsive: {
-          1600: {
-            items: 4,
-            gutter: 20,
-          },
-          1024: {
-            items: 3,
-            gutter: 20,
-          },
-          768: {
-            items: 2,
-            gutter: 20,
-          },
-          480: {
-            items: 1,
-          },
-        },
-      });
-    </script> -->
 
     <!-- Animate On Scroll -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

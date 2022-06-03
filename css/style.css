@@ -462,8 +462,6 @@ body {
 .fa-paper-plane:hover {
   color: #991b1b;
   transition: 0.5s;
-  /* transform: translateY(-4px) !important; */
-  cursor: pointer;
 }
 
 @-webkit-keyframes hvr-bob {
@@ -913,7 +911,6 @@ body {
   flex: none;
   margin-right: 1rem;
   width: 30rem !important;
-  cursor: grab;
   padding-bottom: 1rem;
 }
 
@@ -1016,9 +1013,27 @@ body {
   text-decoration: none !important;
 }
 
+.contact-say-hello:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #ffffff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.contact-say-hello:hover:after {
+  width: 100%;
+  left: 0;
+}
+
 .contact-say-hello:hover .fas {
   transform: rotate(-45deg);
-  transition: 0.4s ease-in-out;
+  transition: 0.5s all ease-in-out;
 }
 
 .btn-connect:hover {

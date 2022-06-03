@@ -56,7 +56,7 @@ window.addEventListener("scroll", (event) => {
   }
 
   // for icons
-  if (scroll > 6970) {
+  if (scroll > 7370) {
     document.getElementById("side-nav-github").style.color = "white";
     document.getElementById("side-nav-linkedin").style.color = "white";
     document.getElementById("side-nav-email").style.color = "white";
