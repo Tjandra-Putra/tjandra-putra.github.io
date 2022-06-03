@@ -1011,6 +1011,17 @@ body {
   text-decoration: none !important;
 }
 
+.contact-say-hello:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
 .contact-say-hello:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
