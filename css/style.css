@@ -895,8 +895,8 @@ body {
 }
 
 .carousel {
-  scroll-snap-type: x mandatory;
-  scroll-padding: 0 30px;
+  /* scroll-snap-type: x mandatory;
+  scroll-padding: 0 30px; */
   display: flex;
   overflow-x: auto;
 }
@@ -907,7 +907,7 @@ body {
 }
 
 .carousel .item {
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
   flex: none;
   margin-right: 1rem;
   width: 30rem !important;
@@ -927,12 +927,6 @@ body {
   font-weight: 500;
   font-size: 1.1rem;
   text-align: left;
-}
-
-.carousel .btn-slider {
-  border-radius: 50px;
-  width: 40px;
-  height: 40px;
 }
 
 .other-projects .carousel-title {
