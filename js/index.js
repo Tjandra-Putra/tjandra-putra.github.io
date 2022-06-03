@@ -1,3 +1,75 @@
+// ========================== CAROUSEL DRAG TO SCROLL ==========================
+const slider = document.querySelector(".carousel");
+let isDown = false;
+let startX;
+let scrollLeft;
+
+slider.addEventListener("mousedown", (e) => {
+  isDown = true;
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
+slider.addEventListener("mouseleave", () => {
+  isDown = false;
+});
+slider.addEventListener("mouseup", () => {
+  isDown = false;
+});
+slider.addEventListener("mousemove", (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - slider.offsetLeft;
+  const walk = (x - startX) * 3; //scroll-fast
+  slider.scrollLeft = scrollLeft - walk;
+  console.log(walk);
+});
+
+// ======================= CUSTOM CURSOR ======================
+var cursor = $(".cursor"),
+  follower = $(".cursor-follower");
+
+var posX = 0,
+  posY = 0,
+  mouseX = 0,
+  mouseY = 0;
+
+TweenMax.to({}, 0.016, {
+  repeat: -1,
+  onRepeat: function () {
+    posX += (mouseX - posX) / 9;
+    posY += (mouseY - posY) / 9;
+
+    TweenMax.set(follower, {
+      css: {
+        left: posX - 20,
+        top: posY - 20,
+      },
+    });
+
+    TweenMax.set(cursor, {
+      css: {
+        left: mouseX,
+        top: mouseY,
+      },
+    });
+  },
+});
+
+$(document).on("mousemove", function (e) {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+});
+
+$(".projects-wrapper img").on("mouseenter", function () {
+  cursor.addClass("active");
+  follower.addClass("active");
+});
+
+$(".projects-wrapper img").on("mouseleave", function () {
+  cursor.removeClass("active");
+  follower.removeClass("active");
+});
+
 // ======================= INTRODUCTION MODAL ======================
 // function resizeForm() {
 //   // only runs on desktop
@@ -97,11 +169,11 @@ AOS.init({
 });
 
 // ========================== POINTER.JS CURSON ==========================
-init_pointer({
-  pointerColor: "#222",
-  ringSize: 15,
-  ringClickSize: 10,
-});
+// init_pointer({
+//   pointerColor: "#222",
+//   ringSize: 15,
+//   ringClickSize: 10,
+// });
 
 // ========================== CUSTOM MUSIC PLAYER ==========================
 // Bg Music
@@ -218,42 +290,16 @@ tippy("#play", {
 // });
 
 // ========================== IMAGE HOVER EFFECT DISTORTION ==========================
-new hoverEffect({
-  parent: document.querySelector(".img-effect"),
-  intensity1: 1,
-  intensity2: 2,
-  speedIn: 1,
-  speedOut: 1,
-  image1: "./assets/image/04.png",
-  image2: "./assets/image/03.png",
-  displacementImage: "./assets/image/displacement.jpg",
-});
+// new hoverEffect({
+//   parent: document.querySelector(".img-effect"),
+//   intensity1: 1,
+//   intensity2: 2,
+//   speedIn: 1,
+//   speedOut: 1,
+//   image1: "./assets/image/02.png",
+//   image2: "./assets/image/03.png",
+//   displacementImage: "./assets/image/displacement.jpg",
+// });
 
 // ========================== GET CURRENT YEAR FOR COPYRIGHT ==========================
 document.getElementById("copyright").appendChild(document.createTextNode(new Date().getFullYear()));
-
-// ========================== CAROUSEL DRAG TO SCROLL ==========================
-const slider = document.querySelector(".carousel");
-let isDown = false;
-let startX;
-let scrollLeft;
-
-slider.addEventListener("mousedown", (e) => {
-  isDown = true;
-  startX = e.pageX - slider.offsetLeft;
-  scrollLeft = slider.scrollLeft;
-});
-slider.addEventListener("mouseleave", () => {
-  isDown = false;
-});
-slider.addEventListener("mouseup", () => {
-  isDown = false;
-});
-slider.addEventListener("mousemove", (e) => {
-  if (!isDown) return;
-  e.preventDefault();
-  const x = e.pageX - slider.offsetLeft;
-  const walk = (x - startX) * 3; //scroll-fast
-  slider.scrollLeft = scrollLeft - walk;
-  console.log(walk);
-});

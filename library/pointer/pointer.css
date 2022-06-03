@@ -40,9 +40,9 @@ html {
   cursor: none;
 }
 
-video {
-  cursor: none !important;
-}
+/* video {
+  cursor: none;
+} */
 
 a,
 button,
