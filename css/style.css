@@ -173,8 +173,8 @@ body {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
-  /* display: none; */
+  /* width: 10px; */
+  display: none;
 }
 
 ::-webkit-scrollbar:hover {
