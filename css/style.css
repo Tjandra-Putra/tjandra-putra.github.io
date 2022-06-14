@@ -20,7 +20,9 @@
   --color-blood: rgb(255, 44, 90);
   --color-berry: #161f38;
   --color-orange: #ff5722;
-  --color-reddish-brown: #991b1b;
+  --color-reddish-brown: #000000;
+
+  /* --color-reddish-brown: #991b1b; */
 }
 
 /** ========================== General ========================== **/
@@ -31,8 +33,9 @@ html {
   cursor: none;
 }
 
-a:hover {
-  cursor: none;
+a:hover,
+button:hover {
+  cursor: none !important;
 }
 
 body {
@@ -421,10 +424,10 @@ body {
 
 .side-email .email {
   writing-mode: vertical-lr;
-  color: #000000;
   text-decoration: none;
   letter-spacing: 2px;
   font-weight: 500;
+  color: #000;
 }
 
 .side-email .email:hover {
@@ -542,7 +545,9 @@ body {
 
 .experience .container {
   min-height: 100vh;
-  margin-top: 11vh;
+  /* margin-top: 11vh; */
+  display: flex;
+  align-items: center;
 }
 
 .experience ul li {
@@ -551,8 +556,7 @@ body {
 }
 
 .testimonial {
-  /* border-bottom: 7px double rgb(0, 0, 0); */
-  background-color: #f4f4f45f;
+  background-color: #f4f4f487;
 }
 
 .testimonial .container {
@@ -846,6 +850,10 @@ body {
   margin-top: 5vh;
 }
 
+.other-projects .bg-dark {
+  background: #000000d3 !important;
+}
+
 .custom-line {
   border-top: 6px dotted rgba(0, 0, 0, 0.071);
   width: 100%;
@@ -913,7 +921,7 @@ body {
 .carousel .item {
   /* scroll-snap-align: start; */
   flex: none;
-  margin-right: 1rem;
+  margin-right: 1.5rem;
   width: 30rem !important;
   padding-bottom: 1rem;
 }
