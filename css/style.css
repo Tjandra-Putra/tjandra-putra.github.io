@@ -1456,6 +1456,35 @@ footer .text-footer {
     font-size: 1.1rem;
   }
 
+  .about-me .title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  .about-me .description {
+    font-size: 1rem;
+  }
+
+  .about-me .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .about-me .section .badge {
+    margin-bottom: 1rem;
+  }
+
+  .about-me .section .item .title {
+    margin-bottom: 0.5rem;
+  }
+
+  .about-me .section .item ul li {
+    padding: 0.5rem 0 !important;
+  }
+
   .connect .heading {
     font-size: 1.2rem !important;
     text-align: left;
