@@ -1025,7 +1025,7 @@ body {
 }
 
 .about-me .description {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .about-me .description:nth-child(2) {
@@ -1099,16 +1099,11 @@ body {
 }
 
 .connect {
-  background-color: #121211;
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-
-.connect .title {
-  font-size: 4.5rem;
-  color: #e1dbd7;
-  font-weight: 500;
-  letter-spacing: 2px;
+  background-color: #000000;
+  /* padding-top: 5%;
+  padding-bottom: 5%; */
+  display: flex;
+  align-items: center;
 }
 
 .connect .smiley-icon {
@@ -1124,70 +1119,33 @@ body {
   }
 }
 
-.connect .box {
-  background-color: #e1dbd7;
-  margin-top: 3rem;
-  padding: 3rem;
-  border-radius: 3px;
+.connect .question {
+  font-size: 4.4rem;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 1px;
 }
 
-.connect .box .heading {
-  font-size: 2.3rem;
-  font-weight: 500;
-  line-height: 2.8rem;
-}
-
-.connect .box .description {
-  font-size: 1.2rem;
-  margin-top: 3rem;
-  text-align: justify;
-  line-height: 2.3rem;
-}
-
-.connect .heading-question {
-  font-weight: 500;
-  font-size: 2.5rem;
-  /* color: #e1dbd7; */
-  color: #ffffff;
-  padding-top: 25.5vh;
-  line-height: 6.5vh;
-  text-align: justify;
-  letter-spacing: 0.1px;
-}
-
-.connect .description-right {
-  font-size: 1.2rem;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  text-align: justify;
-  line-height: 2.3rem;
-  color: rgba(255, 255, 255, 0.86);
-}
-
-.contact-say-hello {
-  font-size: 5rem;
-  -webkit-text-fill-color: #070001;
-  -webkit-text-stroke-color: #ffffff;
-  -webkit-text-stroke-width: 2px;
-  font-weight: 800;
-  letter-spacing: 3px;
+.connect .contact-say-hello {
+  font-size: 4.4rem;
+  font-weight: 200 !important;
   text-align: left;
-  margin-top: 2rem;
   text-decoration: none !important;
 }
 
-.contact-say-hello:before {
+.connect .contact-say-hello:before {
   content: "";
   display: block;
   position: absolute;
   left: 0;
-  right: 0;
+  right: 60px;
   bottom: 0;
   height: 2px;
-  background: rgba(255, 255, 255, 0.3);
+  /* background: rgba(255, 255, 255, 0.3); */
+  background-color: white;
 }
 
-.contact-say-hello:after {
+.connect .contact-say-hello:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -1195,59 +1153,66 @@ body {
   height: 2px;
   left: 50%;
   position: absolute;
-  background: #ffffff;
+  /* background: #ffffff; */
+  background-color: black;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
 
-.contact-say-hello:hover:after {
-  width: 100%;
+.connect .contact-say-hello:hover:after {
+  width: calc(100% - 60px);
   left: 0;
 }
 
-.contact-say-hello:hover .fas {
+.connect .contact-say-hello:hover .fas {
   transform: rotate(-45deg);
   transition: 0.5s all ease-in-out;
 }
 
-.btn-connect:hover {
-  font-weight: 700 !important;
-  color: #ffffff !important;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-  border: none;
+.connect .footer {
+  margin-top: 10rem;
 }
 
-footer {
-  background-color: #121211;
-  padding-top: 0rem;
-  margin-top: 10rem;
+.connect .footer ul {
+  list-style: none;
+  color: white;
+  padding: 0;
+}
+
+.connect .footer .email {
+  font-size: 1.3rem;
+  text-decoration: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
   font-weight: 300;
 }
 
-footer .copyright-footer {
-  letter-spacing: 1px;
+.connect .footer .email:hover {
+  font-weight: 400;
+  transition: 0.5 ease-in;
+}
+
+.connect .footer ul li:nth-child(2),
+.connect .footer ul li:nth-child(3) {
+  font-size: 1rem;
   color: #ffffffd7;
+  font-weight: 300;
+  margin-top: 1.1rem;
 }
 
-.featured-title {
-  font-weight: 600 !important;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+.connect .footer-link {
+  color: #ffffffd7;
+  font-weight: 200;
+  font-size: 1.2rem;
+  text-transform: capitalize;
 }
 
-.footer-link:hover {
+.connect .footer-link:hover {
   transform: translateY(-0.1rem) !important;
-  transition: 0.4s ease-in-out;
-  font-weight: 600 !important;
+  font-weight: 300 !important;
   color: #ffffff !important;
 }
 
-.footer-link {
-  font-weight: 400 !important;
-  color: #ffffffd7;
-}
-
-footer .text-footer {
+.connect .footer .text-footer {
   box-shadow: rgba(0, 158, 253, 0.25) 0 20px 80px, rgba(42, 245, 152, 0.1) 0 20px 40px;
   background-image: linear-gradient(135deg, rgba(42, 245, 152, 1), rgba(0, 158, 253, 1) 100%, rgba(42, 245, 152, 1));
 }
@@ -1485,47 +1450,44 @@ footer .text-footer {
     padding: 0.5rem 0 !important;
   }
 
-  .connect .heading {
-    font-size: 1.2rem !important;
-    text-align: left;
-    line-height: 1.7rem !important;
-    letter-spacing: 1px;
-    font-weight: 600 !important;
-  }
-
-  .connect .title {
-    color: #ffffff !important;
-  }
-
-  .connect .description {
-    font-size: 1rem !important;
-    text-align: left !important;
-  }
-
-  .connect .heading-question {
-    text-align: left !important;
-    line-height: 2.3rem !important;
-  }
-
-  .connect .description-right {
-    font-size: 1rem !important;
-    line-height: unset;
-    letter-spacing: 1px;
-  }
-
-  .connect .contact-say-hello {
-    font-size: 3.3rem;
-    max-width: 1rem;
-  }
-
-  .section-title,
-  .connect .title,
-  .connect .heading-question {
-    font-size: 1.8rem !important;
+  .connect {
     text-align: center;
   }
 
-  footer .copyright-footer {
+  .connect .footer {
+    margin-top: 4rem;
+  }
+
+  .connect .footer ul li {
+    margin-top: 1rem !important;
+  }
+
+  .connect .footer .top-bar {
+    margin-top: 3rem;
+  }
+
+  .connect .footer .bottom-bar {
+    margin-top: 1rem !important;
+  }
+
+  .connect .question,
+  .connect .contact-say-hello {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .connect .contact-say-hello:before {
+    left: 35px;
+    right: 35px;
+  }
+
+  .connect .contact-say-hello:hover:after {
+    width: calc(100% - 35px);
+    left: 0;
+  }
+
+  .footer .copyright-footer {
     font-size: 0.9rem !important;
     text-align: center;
   }
