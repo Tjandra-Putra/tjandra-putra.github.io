@@ -584,7 +584,8 @@ body {
 
 .testimonial {
   /* background-color: #f4f4f487; */
-  background-color: #f7f7f7;
+  /* background-color: #f7f7f7; */
+  background-color: rgba(245, 245, 245, 0.273);
 }
 
 .testimonial .container {
@@ -621,7 +622,7 @@ body {
   width: 4.5rem;
   height: 4.5rem;
   border-radius: 50px;
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
 }
 
 .testimonial .quote {
@@ -743,7 +744,7 @@ body {
 }
 
 .featured-projects .projects-wrapper video[poster] {
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
   transition: 0.5s all ease-in-out;
 }
 
@@ -753,7 +754,7 @@ body {
 
 .featured-projects .projects-wrapper img {
   transition: 0.5s all ease-in-out;
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
 }
 
 .featured-projects .projects-wrapper img:hover {
@@ -968,7 +969,9 @@ body {
 }
 
 .carousel .item video {
-  height: 18rem;
+  /* height: 18rem; */
+  height: 19rem;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .carousel::-webkit-scrollbar {
@@ -1028,11 +1031,16 @@ body {
   font-size: 1rem;
 }
 
+.about-me .highlight {
+  font-weight: 600;
+}
+
+/* 
 .about-me .description:nth-child(2) {
   margin-top: 2rem;
   text-decoration: underline;
   font-weight: 300;
-}
+} */
 
 .about-me .d-flex {
   margin-top: 1.5rem;
