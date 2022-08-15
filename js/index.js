@@ -70,6 +70,16 @@ $(".projects-wrapper img").on("mouseleave", function () {
   follower.removeClass("active");
 });
 
+$(".project-design img").on("mouseenter", function () {
+  cursor.addClass("active");
+  follower.addClass("active");
+});
+
+$(".project-design img").on("mouseleave", function () {
+  cursor.removeClass("active");
+  follower.removeClass("active");
+});
+
 // ======================= INTRODUCTION MODAL ======================
 // function resizeForm() {
 //   // only runs on desktop
