@@ -894,7 +894,9 @@ body {
 }
 
 .other-projects .browser-bar {
-  background-color: #070001d7;
+  /* background-color: #070001d7; */
+  background: rgb(248, 248, 248);
+  border-bottom: 1px solid #e4e4e4;
 }
 
 .custom-line {

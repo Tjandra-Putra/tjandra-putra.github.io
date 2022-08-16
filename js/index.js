@@ -313,3 +313,19 @@ tippy("#play", {
 
 // ========================== GET CURRENT YEAR FOR COPYRIGHT ==========================
 document.getElementById("copyright").appendChild(document.createTextNode(new Date().getFullYear()));
+
+// ========================== HIDE VIDEO CONTROLS DEFAULT ==========================
+// default hidden
+var vids = $("video");
+$.each(vids, function () {
+  this.controls = false;
+});
+
+// mouse events
+$("video").hover(function (event) {
+  if (event.type === "mouseenter") {
+    $(this).attr("controls", "");
+  } else if (event.type === "mouseleave") {
+    $(this).removeAttr("controls");
+  }
+});
