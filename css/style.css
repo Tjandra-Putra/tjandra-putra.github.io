@@ -1019,6 +1019,10 @@ body {
   margin-bottom: 10rem;
 }
 
+.project-design .project-design-main-wrapper:nth-child(2) {
+  margin-bottom: 10rem;
+}
+
 .project-design .project-description-box {
   padding: 4rem;
   position: absolute;
