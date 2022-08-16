@@ -1029,7 +1029,7 @@ body {
 .project-design .project-description-box .title {
   font-size: 3rem;
   font-weight: 500;
-  line-height: 4rem;
+  line-height: 3.5rem;
   font-family: var(--font-poppins);
   text-align: left;
 }
