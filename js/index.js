@@ -1,3 +1,7 @@
+window.onload = function () {
+  document.getElementById("loader").style.display = "none";
+};
+
 // ========================== CAROUSEL DRAG TO SCROLL ==========================
 const slider = document.querySelector(".carousel");
 let isDown = false;
