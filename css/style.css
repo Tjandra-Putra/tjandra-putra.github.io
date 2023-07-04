@@ -21,6 +21,7 @@
   --color-berry: #161f38;
   --color-orange: #ff5722;
   --color-reddish-brown: #000000;
+  --color-ocean: #007bff;
 
   /* --color-reddish-brown: #991b1b; */
 }
@@ -250,10 +251,10 @@ body {
 
 .visit-link {
   position: relative;
+  font-weight: 400 !important;
 }
 
 .visit-link:hover {
-  font-weight: 400 !important;
   text-decoration: none !important;
   color: #000000;
 }
@@ -322,7 +323,7 @@ body {
 }
 
 .section-title {
-  font-size: 3rem !important;
+  font-size: 2.5rem !important;
   font-weight: 400 !important;
   line-height: 3.5rem;
   margin-bottom: 2rem;
@@ -336,7 +337,7 @@ body {
   /* background-color: rgba(0, 0, 0, 0.05); */
   background-color: rgba(0, 0, 0, 0.03);
   color: #000000;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .modal {
@@ -372,7 +373,7 @@ body {
 #brand {
   font-weight: 600 !important;
   font-size: 24px !important;
-  font-weight: 500 !important;
+  font-weight: 400 !important;
 }
 
 .navbar .navbar-toggler-icon {
@@ -401,13 +402,13 @@ body {
 
 .nav-link {
   color: #000000 !important;
-  font-weight: 500;
+  font-weight: 400;
   border-bottom: 2.5px solid transparent !important;
 }
 
 .hero-title {
   font-size: 3rem !important;
-  font-weight: 500 !important;
+  font-weight: 400 !important;
   line-height: 3.5rem;
 }
 
@@ -428,15 +429,11 @@ body {
 
 #personal-quality {
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.8rem;
   letter-spacing: 0.2px;
   width: 87%;
   text-align: justify;
-}
-
-.personal-quality-bold {
-  font-weight: 600;
 }
 
 .hero-scroll-wrapper {
@@ -530,7 +527,7 @@ body {
   line-height: 1.1em;
   width: 48rem;
   align-items: center;
-  font-weight: 500;
+  font-weight: 300;
   letter-spacing: 1px;
 }
 
@@ -726,7 +723,7 @@ body {
 
 .testimonial .quote {
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: 400;
   color: rgb(0, 0, 0);
 }
 
@@ -736,7 +733,7 @@ body {
 
 .testimonial .endorser {
   margin-top: 1rem;
-  font-weight: 500;
+  font-weight: 400;
   vertical-align: middle;
   color: var(--color-reddish-brown);
 }
@@ -826,12 +823,18 @@ body {
   /* vertical text */
   writing-mode: vertical-lr;
   position: absolute;
-  right: -1%;
+  right: -3%;
   top: 33%;
   text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 0.8em;
+  font-weight: 300;
   letter-spacing: 1px;
+  background-color: rgba(245, 245, 245, 0.787);
+  padding: 3px;
+  height: 4.5rem;
+  text-align: center;
+  border-radius: 50px;
+  font-family: var(--font-inter);
 }
 
 .featured-projects .projects-wrapper {
@@ -874,8 +877,8 @@ body {
 }
 
 .featured-projects h3 {
-  font-weight: 500;
-  font-size: 1.7rem;
+  font-weight: 400;
+  font-size: 1.5rem;
   text-transform: capitalize;
   letter-spacing: 1px;
 }
@@ -897,15 +900,14 @@ body {
 }
 
 .featured-projects p {
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.9rem;
-  /* color: #565656; */
   text-align: left !important;
   font-weight: 400;
 }
 
 .featured-projects .featured-title {
-  font-weight: 500 !important;
+  font-weight: 400 !important;
   text-transform: capitalize;
   letter-spacing: 1px;
   color: rgba(0, 0, 0, 0.507);
@@ -1128,15 +1130,17 @@ body {
 
 .project-design .project-description-box .title {
   font-size: 3rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 3.5rem;
-
   text-align: left;
 }
 
 .project-design .project-description-box .sub-title {
   padding-top: 1rem;
   padding-left: 5rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.619);
 }
 
 .about-me {
