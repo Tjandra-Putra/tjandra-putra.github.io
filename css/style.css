@@ -996,7 +996,7 @@ body {
 .other-projects {
   display: flex;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.01);
+  /* background-color: rgba(0, 0, 0, 0.01); */
 }
 
 .other-projects .browser-bar {
@@ -1163,18 +1163,21 @@ body {
 }
 
 .about-me .title {
-  font-size: 2.1rem;
-  line-height: 1.2;
+  font-size: 2rem;
+  line-height: 1.5;
   font-weight: 400;
   max-width: 30rem;
 }
 
 .about-me .description {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: var(--font-sriracha);
 }
 
 .about-me .highlight {
-  font-weight: 600;
+  font-weight: 400;
+  background-image: linear-gradient(transparent 50%, rgba(0, 255, 132, 0.4) 50%);
 }
 
 .about-me .d-flex {
